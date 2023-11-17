@@ -34,7 +34,7 @@ z-index:2
 const Wrapper= styled.div`
 display:flex;
 height:100%;
-transform:translate(${props=>props.slideIndex* -100}vw);
+transform:translate(${props=>props.slideIndex * -100}vw);
 transition:all 0.5s linear;
 `
 const Slide= styled.div`
@@ -46,7 +46,9 @@ background-color:bg;
 `
 
 const IMG = styled.img`
-width:100%;
+width:80%;
+height:100%;
+object-fit:cover
 `
 
 const ImgContanier= styled.div`
@@ -78,9 +80,9 @@ export default function Slider() {
 
     const handleClick= (direction)=>{
         if(direction==="left"){
-            setSlideIndex(slideIndex>0?slideIndex-1:2)
+            setSlideIndex(slideIndex>0?slideIndex-1:5)
         }else{
-            setSlideIndex(slideIndex<2?slideIndex+1:0)
+            setSlideIndex(slideIndex<5?slideIndex+1:0)
         }
 
     }
@@ -91,7 +93,7 @@ export default function Slider() {
     <Container>
 
 
-        <Arrow direction="left" onClick={()=>handleClick()}>
+        <Arrow direction="left" onClick={()=>handleClick("left")}>
             <ArrowLeftOutlinedIcon  />
         </Arrow>
 
@@ -111,7 +113,7 @@ export default function Slider() {
         </Wrapper>
 
 
-        <Arrow direction="right" onClick={(direction)=>handleClick()}>
+        <Arrow direction="right" onClick={()=>handleClick("right")}>
             <ArrowRightOutlinedIcon />
         </Arrow>
 
