@@ -80,7 +80,7 @@ export default function NavBar() {
         <Center>
 
          <Logo>     
-            SCELO.
+            SCELO GUMEDE
         </Logo> 
 
         </Center>
