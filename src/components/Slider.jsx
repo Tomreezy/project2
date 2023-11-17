@@ -8,7 +8,7 @@ const Container=styled.div`
 width:100%;
 height:100vh;
 display:flex;
-
+overflow:hidden;
 position:relative;
 `
 
@@ -58,10 +58,14 @@ flex:1;
 const InfoContainer= styled.div`
 padding:50px;
 flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center
 `
 const Title=styled.h1`
 margin: 50px 0px;
-font-size:20px;
+font-size:40px;
 font-weight:bold;
 letter-spacing:3px;
 `
