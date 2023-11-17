@@ -50,11 +50,18 @@ object-fit:cover;
 
 const Icon=styled.div`
 z-index:5;
+display:flex;
+justify-content:center;
+align-items:center;
 background-color:black;
 margin:10px;
 font-size:20px;
-color:white;
+border-radius:50%;
+color:red;
+width:50px;
+height:50px;
 font-weight:bold;
+background-color:white;
 transition:all 0.2s ease-out;
 
 &:hover{
