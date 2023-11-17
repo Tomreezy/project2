@@ -89,7 +89,7 @@ export default function NavBar() {
         <Right>
         
         <MenuItems>REGISTER</MenuItems>
-        <MenuItems>SIGN IN</MenuItems>
+        <MenuItems>SIGN UP</MenuItems>
         <MenuItems>
     
         <Badge badgeContent={3} color="primary">
