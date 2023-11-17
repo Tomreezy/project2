@@ -42,7 +42,7 @@ display:flex;
 align-items:center;
 width:100vw;
 heigth:100vh;
-background-color:bg;
+background-color:${(props)=>props.bg};
 `
 
 const IMG = styled.img`
